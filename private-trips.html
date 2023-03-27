@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountaineer Tours</title>
+    <script src="https://kit.fontawesome.com/aadf22bfab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl bg-orange navbar-dark sticky-top">
+        <div class="container-fluid ms-4">
+            <a class="navbar-brand text-wrap" href="index.html"><img src="assets/images/Logo.png" class="img-fluid" style="width: 450px;"></a>
+        </div>  
+        <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active ms-2 fw-semibold" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-2 fw-semibold" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About Us</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="meet-our-guides.html">Meet Our Guides</a></li>
+                      <li><a class="dropdown-item" href="hiking-destination.html">Hiking Destination</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-2 fw-semibold" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Trips</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="joiner-trips.html">Joiner Trips</a></li>
+                      <li><a class="dropdown-item" href="private-trips.html">Private Trip</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2 me-5 fw-semibold" href="blogs.html">Blogs</a>
+                </li>
+                <li class="nav-item"> 
+                    <a href="be-a-tour-guide.html" class="nav-link btn-blue active text-center fw-semibold">Be a Tour Guide</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="d-flex bg-style" style="background-image: url(assets/images/private-trips.jpg); height: 300px;">
+      <div class="m-auto">
+          <p class="fs-1 text-sm-center fw-semibold">Private Trip</p>
+      </div>
+    </header>
+    <div class="d-flex private">
+      <div class="container-fluid text-center m-auto">
+        <h1>Book a Private Trip!</h1>
+        <span class="fs-4">Create a private moment with your love ones, family or friends.</span><br>
+        <p class="fs-4">You may choose your own Mountaineer Tour Guide, the destination and date you want!</p>
+        <p>Take Note: Appointment should be booked 2 weeks prior the scheduled hike.</p>
+      </div>
+      <div class="container-fluid">
+        <div class="row mx-2">
+          <div class="col p-3 bg-light shadow rounded-4 my-4 me-1 ms-2">
+            <form action="#" method="#" class="row g-3" >
+              <div class="col-12">
+                <p class="fs-2 text-center fw-semibold">Mountaineer Tours Reservation Form</p>
+              </div>
+              <div class="col-md-6">
+                <label for="first-name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="col-md-6">
+                <label for="Last-Name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="Last-Name">
+              </div>
+              <div class="col-lg-5">
+                <label for="private-mountain" class="form-label">Mountain</label>
+                <select id="private-mountain" class="form-select">
+                    <option selected disabled>Select Moutain</option>
+                    <option value="Mt. Pinatubo">Mt. Pinatubo</option>
+                    <option value="Mt. Daraitan">Mt. Daraitan</option>
+                    <option value="Mt. Maculot">Mt. Maculot</option>
+                </select>
+              </div>
+              <div class="col-lg-3">    
+                <label for="no-hikers" class="form-label">No. Hikers</label>
+                <input type="number" id="no-hikers" name="no-hikers" min="1" max="10" class="form-control">
+              </div>
+              <div class="col-lg-4">
+                <label for="schedule-trip" class="form-label">Date of Trip</label>
+                <input type="date" id="schedule-trip" name="schedule-trip" class="form-select">
+              </div> 
+              <div class="col-md-6">
+                <label for="ContactNumber" class="form-label">Contact Number</label>
+                <input type="tel" class="form-control" id="ContactNumber" pattern="[0-9]{11}" maxlength="11" placeholder="Ex. 09*******1234">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn-orange"><b>Book Now!</b></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="container-fluid bg-blue">
+        <div class="d-flex flex-wrap justify-content-evenly text-white">
+          <div class="my-auto d-flex">
+            <div class="my-auto py-5 px-3">
+                <img src="assets/images/google-map.jpg" class="img-fluid map">
+            </div>
+            <div class="my-auto">
+              <p>Contact Information</p>
+              <p>
+                <span><i class="fa-solid fa-house"></i></span>
+                <span>San Jose Del Monte, Bulacan</span>
+              </p>
+              <p>
+                <span><i class="fa-solid fa-address-book"></i></span>
+                <span>+639123456789</span>
+              </p>
+              <p>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>info@mountaineertours.com</span>
+              </p>
+            </div>
+          </div>
+          <div class="my-auto">
+            <p class="text-center">
+              <span>Find us on Social Media</span>
+            </p>
+            <p class="text-center">
+            <a href="#" class="btn-social"><i class="fa-brands fa-facebook fs-3 me-3"></i></a> 
+            <a href="#" class="btn-social"><i class="fa-brands fa-linkedin fs-3 me-3"></i></i></a> 
+            <a href="#" class="btn-social"><i class="fa-brands fa-twitter fs-3 me-3"></i></a> 
+            <a href="#" class="btn-social"><i class="fa-brands fa-instagram fs-3 me-3"></i></a>
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-orange border-top border-white">
+      <p class="text-center text-white py-3 m-auto">Copyright © 2023 Moutaineer Tours. All Right Reserved.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

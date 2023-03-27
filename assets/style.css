@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --orange: #f58920;
+    --blue: #043C49;
+    --white: rgb(245, 245, 245);
+    --darkblue: #06262c;
+    --whitetrans: rgba(248, 245, 245, 0.829);
+    --darktrans: rgba(7, 1, 1, 0.452);
+}
+.bg-orange {
+    background-color: var(--orange);
+}
+.bg-blue {
+    background-color: var(--blue);
+    color: var(--white);    
+}
+.bg-darkblue {
+    background-color: var(--darkblue);
+    color: var(--white);  
+}
+.bg-testimonials {
+    background-color: var(--darkblue);
+}
+.bg-style {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.bg-banner {
+    background-size: auto;
+    background-position: center;
+}
+.bg-whitetrans {
+    background-color: var(--whitetrans);
+}
+.bg-darktrans {
+    color: var(--white);
+    background-color: var(--darktrans);
+}
+.btn-blue {
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 15px;
+    width: 153px;
+}
+.btn-blue:hover {
+    color: var(--white);
+    background-color: var(--darkblue);
+}
+.btn-orange {
+    text-decoration: none;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 15px;
+    width: 153px;
+}
+.btn-orange:hover {
+    color: var(--white);
+    position: relative;
+    bottom: 2px;
+}
+.btn-app img{
+    width: 180px;
+}
+.btn-app:hover {
+    position: relative;
+    bottom: 2px;
+}
+.text-white {
+    color: var(--white);
+}
+.text-orange {
+    color: var(--orange);
+}
+.btn-social {
+    color: var(--white);
+}
+.btn-social:hover {
+    color: var(--white);
+    position: relative;
+    bottom: 2px;
+}
+.btn-readmore {
+    color: var(--white);
+}
+.btn-readmore:hover {
+    color: var(--orange);
+}
+.card {
+    box-shadow: 5px 5px 10px #b4adad;
+}
+.card-style {
+    width: 300px;
+    box-shadow: 5px 5px 10px #b4adad;
+}
+.map{
+    width: 220px;
+}
+.hike-details {
+    list-style-type: none;
+}
+.ratings {
+    width: 100px;
+}
+.checkout-form {
+    width: 300px;
+    height: 370px;
+    margin: 20px 5px 20px 5px;
+    border-radius: 25px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #b4adad;
+}
+.search-form {
+    width: 300px;
+    height: 260px;
+    margin: 20px 5px 20px 5px;
+    border-radius: 25px;
+    background-color: var(--blue);
+    color: var(--white);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #b4adad;
+}
+.Moutain, .Schedule, .Hikers, .Name, .contact, .email {
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+.checkout-form input {
+    border-radius: 10px;
+}
+.checkout-form select{
+    border-radius: 10px;
+    height: 28px;
+}
+.search {
+    padding: 10px;
+}
+.card-trips {
+    box-shadow: 5px 5px 10px #b4adad;
+    margin: 10px;
+}
+.inclusion {
+    list-style-type: none;
+}
+.blogs-vertical img{
+    max-width: 350px;
+}
+.blogs-horizontal img{
+    max-height: 245px;
+}
+.blogs-vertical-right img{
+    max-width: 680px;
+}
+
+@media (max-width: 1250px) {
+    .card-trips {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1176px) {
+    .bg-style {
+        height: auto;
+    }
+} 
+@media (max-width: 1120px) {
+    .card-info {
+        flex-direction: column;
+    }
+}
+@media (max-width: 705px) {
+    .main-card {
+        flex-direction: column;
+    }
+    .checkout {
+        order: 2;
+    }
+}  
+@media (max-width: 700px) {
+    .private {
+        flex-direction: column;
+    }
+}
